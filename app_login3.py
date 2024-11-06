@@ -9,6 +9,7 @@ def login():
     if id == "admin" and pw == "password":  # 예시로 ID와 PW를 'admin'과 'password'로 설정
         st.session_state["logged_in"] = True
         st.success("로그인에 성공했습니다!")
+        st.experimental_rerun()  # 로그인 후 화면을 새로 고침하여 대시보드로 이동
     else:
         st.error("ID 또는 Password가 올바르지 않습니다.")
 
@@ -16,6 +17,7 @@ def login():
 def logout():
     st.session_state["logged_in"] = False
     st.info("로그아웃되었습니다.")
+    st.experimental_rerun()  # 로그아웃 후 화면을 새로 고침하여 로그인 화면으로 이동
 
 # 로그인 화면
 if not st.session_state["logged_in"]:
