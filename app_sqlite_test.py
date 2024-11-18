@@ -39,7 +39,7 @@ import streamlit as st
 import pandas as pd
 
 # Streamlit 제목
-st.title("SQLite Database with Streamlit")
+st.title("SQLite Database 사용하기")
 
 # 데이터베이스 연결
 conn = sqlite3.connect('mydb.db')
@@ -56,8 +56,8 @@ cursor.execute('''
 
 # 데이터 삽입 버튼
 if st.button("Add Sample Data"):
-    cursor.execute("INSERT INTO users (name, age) VALUES ('Alice', 30)")
-    cursor.execute("INSERT INTO users (name, age) VALUES ('Bob', 25)")
+    cursor.execute("INSERT INTO users (name, age) VALUES ('강감찬', 30)")
+    cursor.execute("INSERT INTO users (name, age) VALUES ('홍길동', 25)")
     conn.commit()
     st.write("Sample data added!")
 
