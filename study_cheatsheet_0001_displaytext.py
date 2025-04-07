@@ -1,3 +1,4 @@
+import streamlit as st
 st.text('Fixed width text')
 st.markdown('_Markdown_') # see #*
 st.caption('Balloons. Hundreds of them...')
