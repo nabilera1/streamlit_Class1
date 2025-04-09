@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("대구과학고 chatgpt 사용자 ID 조회")
-st.info("금요일 이후 이 사이트는 사라짐.")
+st.info("금요일 이후 이 사이트는 사라짐. PC에서 보시는 것이 편함.")
 st.info("아이디 비번 메모 및 비밀번호는 처음 접속 후 변경을 권장합니다.")
 
 # 엑셀 파일 경로 or 구글 드라이브 URL
@@ -38,7 +38,7 @@ st.markdown("""
 ### [검수 완료를 위한 테스트 방법]  
 - **ChatGPT 접속 사이트**  
 [https://chatgpt.com/](https://chatgpt.com/)
-
+- 이름 검색 후 위에 나타난 아이디(개인 또는 업체 배정)으로 로그인해야함.
 ---
 
 ### [인증코드 요구시 인증 확인용 사이트] 
