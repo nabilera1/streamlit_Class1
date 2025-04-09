@@ -37,15 +37,15 @@ st.markdown("""
 
 ### 🔍 [검수 완료를 위한 테스트 방법]  
 - **ChatGPT 접속 사이트**  
-👉 [https://chatgpt.com/](https://chatgpt.com/)
+[https://chatgpt.com/](https://chatgpt.com/)
 
 ---
 
-### 🔐 [인증코드 요구시 참고 사이트]  
+### [인증코드 요구시 참고 사이트]  
 - 처음 접속 시 인증코드를 요청하면 **mygpt.kr** 사이트에 아래 아이디로 로그인하면 됩니다.  
   - **아이디**: 아이디는 chatgpt 접속 아이디에서 @기호 앞까지가 인증코드 아이디. 예: `dshs04`  
   - **비밀번호**: 위와 동일  
-  👉 [https://www.mygpt.kr/](https://www.mygpt.kr/)
+  [https://www.mygpt.kr/](https://www.mygpt.kr/)
 
 ---
 """)
