@@ -1,28 +1,16 @@
 import streamlit as st
 import pandas as pd
 
-st.title("📊 Display Data App")
+st.title("📋 간단한 데이터 표시 앱")
 
-# 파일 업로드 받기
-uploaded_file = st.file_uploader("CSV 파일을 업로드하세요", type=["csv"])
+# 예시 데이터프레임
+data = {
+    '이름': ['홍길동', '김철수', '이영희'],
+    '나이': [23, 35, 29],
+    '국가': ['한국', '한국', '한국']
+}
 
-if uploaded_file is not None:
-    # 데이터 읽기
-    df = pd.read_csv(uploaded_file)
+df = pd.DataFrame(data)
 
-    st.subheader("데이터 미리보기")
-    st.write(df.head())
-
-    st.subheader("기본 정보")
-    st.write(f"행 개수: {df.shape[0]}")
-    st.write(f"열 개수: {df.shape[1]}")
-
-    st.subheader("컬럼별 통계")
-    st.write(df.describe())
-
-    st.subheader("원하는 컬럼 선택해서 보기")
-    columns = st.multiselect("컬럼 선택", df.columns.tolist())
-    if columns:
-        st.dataframe(df[columns])
-else:
-    st.warning("먼저 CSV 파일을 업로드하세요.")
+# 데이터 출력
+st.write(df)
