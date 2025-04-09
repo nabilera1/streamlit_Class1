@@ -5,7 +5,7 @@ st.title("🔐 사용자 ID / 비밀번호 조회")
 st.info("비밀번호는 처음 접속 후 변경을 권장합니다.")
 
 # 엑셀 파일 경로 or 구글 드라이브 URL
-url = st.text_input("엑셀 파일 공유 링크를 입력하세요:")
+url = "https://docs.google.com/spreadsheets/d/1XIWlTtMlsL07eoyJf8sbf7SjJWXBZxd2/edit?usp=sharing&ouid=102499631843628462810&rtpof=true&sd=true"
 
 if url:
     try:
