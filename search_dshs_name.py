@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-st.title("대구과학고 chatgpt 사용자 ID / 비밀번호 조회")
-st.info("금요일 이후 이 사이트는 사라짐. 아이디 비번 메모 및 비밀번호는 처음 접속 후 변경을 권장합니다.")
-
+st.title("대구과학고 chatgpt 사용자 ID 조회")
+st.info("금요일 이후 이 사이트는 사라짐.")
+st.info("아이디 비번 메모 및 비밀번호는 처음 접속 후 변경을 권장합니다.")
 
 # 엑셀 파일 경로 or 구글 드라이브 URL
 url = "https://docs.google.com/spreadsheets/d/1XIWlTtMlsL07eoyJf8sbf7SjJWXBZxd2/edit?usp=sharing&ouid=102499631843628462810&rtpof=true&sd=true"
@@ -25,8 +25,8 @@ if url:
 
             if not result.empty:
                 st.success("검색 결과")
-                st.write(f"🆔 ID: `{result.iloc[0]['ID']}`")
-                st.write(f"🔑 비밀번호: `{result.iloc[0]['비밀번호']}`")
+                st.write(f"ID: `{result.iloc[0]['ID']}`")
+                st.write(f"비밀번호: `{result.iloc[0]['비밀번호']}`")
             else:
                 st.warning("일치하는 이름이 없습니다.")
     except Exception as e:
