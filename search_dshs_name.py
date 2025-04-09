@@ -35,7 +35,7 @@ if url:
 st.markdown("""
 ---
 
-### 🔍 [검수 완료를 위한 테스트 방법]  
+### [검수 완료를 위한 테스트 방법]  
 - **ChatGPT 접속 사이트**  
 [https://chatgpt.com/](https://chatgpt.com/)
 
